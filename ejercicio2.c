@@ -14,7 +14,7 @@ int main(){
         printf("    ]\n");
         
     }
-    num -= 1;
+    num -= 1;//Reducción del tamaño del arreglo
     array = (int*) realloc(array,num*sizeof(int));
     if(array != NULL){
         for(;contador < num;contador++){
@@ -31,3 +31,4 @@ int main(){
     }  
     return 0;
 }
+//Programa creado por Avila Gonzalez Alejandra Daniela y Barragan Rivera Diego el 17/6/2021
