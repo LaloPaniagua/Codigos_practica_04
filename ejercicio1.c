@@ -7,6 +7,10 @@ int main(){
     scanf("%d",&num);
     array = (int*) calloc(num,sizeof(int));//Creación del arreglo por medio de la función calloc
     if(array != NULL){
+        for(contador=0;contador < num;contador++){
+            printf("Ingrese el dato del elemento %d: ",contador);
+            scanf("%d",(array+contador));
+        }
         printf("Vector reservado: \n[   ");
         for(contador = 0; contador<num;contador++){
             printf("Valor: %d direccion: %p -->",*(array+contador),array+contador);
